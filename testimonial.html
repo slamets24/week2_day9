@@ -1,0 +1,83 @@
+<html>
+<header>
+    <title>CV Slamet Septiawan</title>
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</header>
+
+<body>
+    <!--  Navbar   -->
+    <nav>
+        <div class="nav-left">
+            <ul>
+                <img src="./asset/images/logo.png" alt="logo">
+                <li class="nav-list">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="nav-list">
+                    <a href="myProject.html">My Project</a>
+                </li>
+                <li class="nav-list">
+                    <a href="testimonial.html">Testimonial</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-right nav-list">
+            <a href="contact-me.html">Contact Me</a>
+        </div>
+        <div class="nav-right" id="barsmenu">
+            <button onclick="openHumberger()" style="background-color: transparent; border: none; cursor: pointer;">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+    <div class="humberger-nav-container" id="humberger-nav-container">
+        <a href="index.html" class="humberger-nav-active">Home</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact-me.html">Contact Me</a>
+    </div>
+    <div class="container">
+        <h1>My Testimonials</h1>
+        <div class="container-rating">
+            <h2> Rating By Star</h2>
+            <div class="rating">
+                <button class="rating-btn" onclick="showTestimonial()">
+                    All
+                </button>
+                <button class="rating-btn" onclick="filterTestimonials(1)">
+                    1 <i class="fa-solid fa-star"></i>
+                </button>
+                <button class="rating-btn" onclick="filterTestimonials(2)">
+                    2 <i class="fa-solid fa-star"></i>
+                </button>
+                <button class="rating-btn" onclick="filterTestimonials(3)">
+                    3 <i class="fa-solid fa-star"></i>
+                </button>
+                <button class="rating-btn" onclick="filterTestimonials(4)">
+                    4 <i class="fa-solid fa-star"></i>
+                </button>
+                <button class="rating-btn" onclick="filterTestimonials(5)">
+                    5 <i class="fa-solid fa-star"></i>
+                </button>
+            </div>
+        </div>
+        <section class="testimonials" id="testimonials">
+            
+                <!-- <div class="testimonial">
+                    <img src="assets/profile/profile.png" class="profile-testimonial" />
+                    <p class="quote">"Etiam nec tincidunt erat. Sed faucibus convallis lectus vel porttitor. Fusce
+                        tristique dolor quis odio rhoncus laoreet."</p>
+                    <p class="author">- Ilham Fathullah</p>
+                </div> -->
+        </section>
+    </div>
+</body>
+<script src="asset/js/nav.js"></script>
+<script src="asset/js/ajax.js"></script>
+<!-- <script src="asset/js/testimonial.js"></script> -->
+</html>
